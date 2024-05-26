@@ -1,3 +1,4 @@
+// starting http server to say hello
 const http = require('http');
 
 const server = http.createServer((req, res) => {
