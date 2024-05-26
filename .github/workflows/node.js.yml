@@ -13,11 +13,10 @@ jobs:
        exclude:
          - os: macos-latest
            node: 10
-
    steps:
      - uses: actions/checkout@v2
      - name: use node.js ${{ matrix.node }}
-     - uses: actions/setup-node@v1
+       uses: actions/setup-node@v1
        with:
          node-version: ${{ matrix.node }}
 
